@@ -1,10 +1,24 @@
-# Sistema de Orçamento Luminotécnico
+# Semantic Template Tests
 
-# Objetivo
+## Como desenvolver?
 
-Sistema para elaboração de orçamentos de produtos de iluminação LED, cadastro de clientes e obras, e controle de estoque.
+Siga o passo a passo.
 
+1. Clone o repositório.
+2. Crie um virtualenv com Python 3.5
+3. Ative o virtualenv.
+4. Instale as dependências.
+5. Configure a instância com o .env
+6. Execute os testes.
 
-## Versões
-
-Python 3.5.2 e Django 1.10.1
+```bash
+git clone https://github.com/rg3915/semantic-template.git
+cd semantic-template
+python -m venv .venv
+source .venv/bin/activate # Linux
+pip install -r requirements.txt
+python contrib/env_gen.py
+var=`python contrib/secret_gen.py`
+printf '\nSECRET_KEY='$var >> .env
+python manage.py test
+```
