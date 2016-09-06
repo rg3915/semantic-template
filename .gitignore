@@ -5,8 +5,9 @@ lib/
 core/__pycache__
 core/migrations/
 
-sol_project/__pycache__/
+semantic/__pycache__/
 
+*.pyc
 .env
 *.sqlite3
 *.pyc	
