@@ -12,3 +12,4 @@ semantic/__pycache__/
 *.sqlite3
 *.pyc	
 .venv/
+staticfiles/
